@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tabela interna de serviços e valores-base da Nulltempo para parceiros." />
+  <title>Nulltempo — Tabela de serviços</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Nulltempo — início"><span class="brand-mark">N/T</span><span class="brand-name">NULLTEMPO</span></a>
+    <nav class="top-nav" aria-label="Navegação principal"><a href="#servicos">serviços</a><a href="#processo">processo</a><a href="#contato">contato</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-meta"><span>DESIGN / MOTION / 3D</span><span>TABELA INTERNA — 2026</span></div>
+      <div class="hero-grid hero-grid--table">
+        <div><p class="eyebrow">Nulltempo / parceiros</p><h1>Tabela de<br><span>serviços & valores.</span></h1></div>
+        <div class="hero-aside"><p>Base comercial para agências e parceiros que terceirizam serviços da Nulltempo e precisam estimar projetos para seus próprios clientes.</p><a class="text-link" href="#servicos">consultar tabela ↓</a></div>
+      </div>
+      <div class="pricing-alert" role="note">
+        <div class="alert-index">REFERÊNCIA / 01</div>
+        <div class="alert-copy"><strong>Uma base transparente para começar a conversa.</strong><p>Os valores podem variar conforme prazo, urgência, quantidade de revisões, volume de peças, complexidade e escopo.</p></div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="servicos">
+      <div class="section-heading"><div><p class="eyebrow">Serviços</p><h2>O que fazemos</h2></div><p class="section-note">No desktop, passe o mouse ou use o teclado para visualizar cada entrega. Em qualquer dispositivo, clique diretamente em um valor para adicioná-lo à estimativa.</p></div>
+      <div class="catalog-tools">
+        <div class="filter-bar" role="group" aria-label="Filtrar serviços">
+          <button class="filter is-active" data-filter="all">todos</button><button class="filter" data-filter="design">design gráfico</button><button class="filter" data-filter="motion">motion design</button><button class="filter" data-filter="3d">3D / VFX</button>
+        </div>
+        <p class="result-count" id="resultCount"></p>
+      </div>
+      <div class="selection-guide" role="note"><span>SELEÇÃO / ORÇAMENTO</span><p><strong>Os valores são selecionáveis.</strong> Clique na faixa desejada em cada serviço para adicioná-la à estimativa. Uma nova escolha no mesmo item substitui a anterior; clicar novamente no valor ativo remove o item.</p><button class="clear-selection" id="clearSelectionTop" type="button" disabled>desselecionar tudo</button></div>
+      <div class="pricing-layout">
+        <div class="service-list" id="serviceList" aria-live="polite"></div>
+        <aside class="preview-panel" aria-label="Detalhes do serviço">
+          <div class="preview-head"><span>PREVIEW / SERVIÇO</span><span id="previewCode">00</span></div>
+          <div class="preview-stage" id="previewStage"><div class="empty-preview"><div class="empty-cross">+</div><p>mova o cursor<br>sobre um serviço</p></div></div>
+          <div class="preview-caption"><div><span class="caption-label">ENTREGA</span><strong id="previewTitle">Selecione um item</strong></div><p id="previewText">O painel mostra o contexto de cada serviço.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="process-section" id="processo">
+      <div class="section-heading"><div><p class="eyebrow">Processo</p><h2>Como o valor é definido</h2></div></div>
+      <div class="process-grid"><article><span>01</span><h3>Escopo</h3><p>Quantidade de peças, formatos, telas, cenas e desdobramentos.</p></article><article><span>02</span><h3>Complexidade</h3><p>Direção de arte, ilustração, 3D, animação, composição e acabamento.</p></article><article><span>03</span><h3>Prazo</h3><p>Urgência e janelas curtas podem exigir prioridade e ajuste de valor.</p></article><article><span>04</span><h3>Aplicação</h3><p>Digital, impresso, telão, mídia paga, evento e múltiplas adaptações.</p></article></div>
+    </section>
+
+    <section class="terms-section" aria-labelledby="terms-title">
+      <div><p class="eyebrow">Observação geral</p><h2 id="terms-title">A tabela orienta. <span class="keep-together">O briefing</span> define.</h2></div>
+      <div><p>Os valores são <strong>referenciais</strong> e não funcionam como tabela fixa obrigatória.</p><p>O valor final pode variar conforme:</p><ul><li>prazo e urgência;</li><li>complexidade e nível de direção de arte;</li><li>quantidade de alterações e peças;</li><li>materiais fornecidos pelo cliente;</li><li>quantidade de patrocinadores;</li><li>formatos necessários;</li><li>necessidade de 3D, VFX ou captação;</li><li>porte e exposição do evento.</li></ul></div>
+    </section>
+
+    <section class="contact-section" id="contato"><div><p class="eyebrow">Novo projeto</p><h2>Tem um briefing?</h2></div><a class="cta-button" href="https://wa.me/554498142748" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp"><span>solicitar orçamento</span><span>↗</span></a></section>
+  </main>
+  <footer><span>NULLTEMPO / DESIGN & MOTION</span><span>ÍCONES / <a href="https://phosphoricons.com/" target="_blank" rel="noopener noreferrer">PHOSPHOR</a> — VALORES SUJEITOS A ORÇAMENTO</span></footer>
+  <aside class="quote-cart" id="quoteCart" aria-label="Resumo da seleção">
+    <button class="quote-cart-toggle" id="cartToggle" type="button" aria-expanded="false" aria-controls="cartPanel"><span><small>ESTIMATIVA</small><strong id="cartTotalCompact">R$ 0</strong></span><span class="cart-count" id="cartCount">0</span><span class="cart-caret">↑</span></button>
+    <div class="quote-cart-panel" id="cartPanel" hidden>
+      <div class="quote-cart-head"><div><small>SELEÇÃO / ORÇAMENTO</small><strong>Itens escolhidos</strong></div><div class="quote-cart-actions"><button class="clear-selection" id="clearSelectionCart" type="button" disabled>limpar tudo</button><button id="cartClose" type="button" aria-label="Fechar resumo">×</button></div></div>
+      <div class="quote-cart-empty" id="cartEmpty">Selecione serviços na tabela para criar uma estimativa.</div>
+      <ul class="quote-cart-list" id="cartList"></ul>
+      <div class="quote-cart-summary"><span>Total estimado</span><strong id="cartTotal">R$ 0</strong><small>Itens sob consulta não entram na soma. O briefing define o valor final.</small></div>
+      <a class="quote-cart-send is-disabled" id="cartSend" href="#" aria-disabled="true">solicitar orçamento <span>↗</span></a>
+    </div>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
